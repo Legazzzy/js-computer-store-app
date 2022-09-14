@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Computer Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="grid_cont">
+
+        <div id="header"><h1>Computer Store</h1></div>
+
+
+        <div id="banker_div", class="main_div">
+
+            <h1>Joe Banker</h1>
+
+            <p id="balance_txt", class="div_txt">Balance: </p>
+            <p id="balance_balance" class="div_txt"></p>
+            <p id="loan_text"></p>
+            <p id="loan"></p>
+            <button id="get_loan_button" class="buttons" type="submit" onclick="get_loan()">Get a loan</button>
+
+        </div>
+
+
+        <div id="work_div", class="main_div">
+
+            <h1>Work</h1>
+
+            <p id="work_txt", class="div_txt">Pay: </p>
+            <p id="work_balance" class="div_txt"></p>
+            <button id="bank_button" class="buttons" onclick="bank_bt()">Bank</button>
+            <button id="work_button" class="buttons" onclick="work_bt()">Work</button>
+            
+        </div>
+
+
+        <div id="laptop_div", class="main_div">
+
+            <h1>Laptops</h1>
+            
+            <select name="computers" id="computers">
+            </select>
+            <span id="features", class="div_txt"></span>
+
+
+        </div>
+
+        <div id="display_laptop_div", class="main_div">
+            <div id="lap_u_div_l" class="main_div">
+                <img src="assets/images/1.png" id="img_laptop">
+            </div>
+            <div id="lap_u_div_m" class="main_div">
+                <h1 id="selected_pc">Intelioon</h1>
+                <p id="feature_txt", class="div_txt">good laptop </p>
+            </div>
+            <div id="lap_u_div_r" class="main_div">
+                <p id="price">Money</p>
+                <button id="buy_button" class="buttons" onclick="buy_now()">BUY NOW</button>
+            </div>
+        </div>
+
+</div>
+      <script src="script.js"></script>
+  </body>
+</html>

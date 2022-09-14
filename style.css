@@ -1,0 +1,205 @@
+
+
+body {
+
+}
+.buttons{
+    cursor:pointer;
+      position:relative;
+      padding:10px 20px;
+      background:white;
+      font-size:28px;
+      transition:all 1s;
+      border-radius: 20px;
+      border-top-right-radius:0px;
+      border-bottom-left-radius:0px;
+    }
+
+.buttons:hover{
+    color:gray;}
+
+      
+    
+
+#header {
+    grid-area: h;
+    width: 100%;
+    background-color: black;
+    border-style: dashed;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 200%;
+    color: white;
+    border: black;
+    border-style: dashed;
+
+}
+
+
+#grid_cont{
+    grid-template-areas:
+    'h h h h h h'
+    'l l m m r r'
+    'f f f f f f';
+    gap: 10px;
+    background-color: aliceblue;
+    padding: 10px;
+    width: 100%;
+    border-style: dotted;
+    display: grid;
+    text-align: center;
+
+}
+
+
+.main_div{
+    padding: 3%;
+    margin: 5%;
+    background-color: lightgray;
+    display: inline-block;
+    font-family:'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+#banker_div{
+    display: grid;
+    grid-template-areas:
+    'h h h h h h'
+    'mlt mlt mt mt mrt mrt'
+    'mlb mlb mb mb mrb mrb'
+    'f f f f f f';
+    grid-area: l;
+}
+#balance_txt{
+    grid-area: mlt;
+}
+#balance_balance{
+    grid-area: mrt;
+}
+#get_loan_button{
+    grid-area: f;
+}
+#get_loan_button:hover{
+    background-color: green;
+}
+#loan_text{
+    grid-area: mlb;
+}
+#loan{
+    grid-area: mrb;
+}
+
+#work_div{
+    display: grid;
+    grid-template-areas:
+    'h h h h h h'
+    'ml ml ml mr mr mr'
+    'fl fl fm fm fr fr';
+    grid-area: m;
+    gap: 10px;
+    padding: 10px;
+}
+
+#work_txt{
+    grid-area: ml; 
+}
+#work_balance{
+    grid-area: mr;
+}
+#bank_button{
+    grid-area: fl;
+
+}
+#bank_button:hover{
+    background-color: khaki;
+
+}
+#work_button{
+    grid-area: fr;
+
+}
+#work_button:hover{
+    background-color: royalblue;
+
+}
+#pay_loan_button{
+    grid-area: fm;
+}
+#pay_loan_button:hover{
+    background-color: black;
+}
+
+#laptop_div{
+    display: grid;
+    grid-template-areas:
+    'h h h h h h'
+    'm m m m m m'
+    'f f f f f f';
+    grid-area: r;
+
+}
+
+#computers{
+    grid-area: m;
+}
+#features{
+    padding-top: 10px;
+    grid-area: f;
+}
+
+#display_laptop_div{
+    grid-area: f;
+    display: grid;
+    grid-template-areas:
+    'l m m m r r'
+    'l m m m r r'
+    'l m m m r r';
+    gap: 10px;
+    padding: 10px;
+
+}
+#lap_u_div_l{
+    grid-area: l;
+
+}
+#img_laptop{
+    width: 300px;
+
+}
+
+
+#lap_u_div_m{
+    grid-area: m;
+    grid-template-areas:
+    't t t t t t'
+    'm m m m m m'
+    'm m m m m m';
+}
+#selected_pc{
+    grid-area: t;
+    
+    }
+#feature_txt{
+
+    }
+
+#lap_u_div_r{
+    grid-area: r;
+    grid-template-areas:
+    'l l m m r r'
+    'l l m m r r'
+    'l l m m r r';
+
+}
+#price{
+
+}
+#buy_button{
+
+}
+#buy_button:hover{
+    background-color: lightskyblue;
+
+}
